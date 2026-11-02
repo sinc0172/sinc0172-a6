@@ -1,0 +1,136 @@
+/* REQUIRED: main navigation bar styles */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #d75e70;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0;
+}
+
+.main-nav {
+    display: flex;
+    gap: 30px;
+    color:#fff;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-nav a:hover, a:focus {
+    color: #fdf57e;
+    text-decoration: underline double;
+}
+
+/* main content styles */
+/* typography and color */
+
+body {
+    background-color: #efebe7;
+    color: #59402c;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #59402c;
+    font-weight: bold;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 1.25rem;
+    color: #59402c;
+    font-weight: bold; 
+    padding: 20px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: light;
+}
+
+p a {
+    color: #d75e70;
+    text-decoration: none;
+    padding: 12px;
+}
+
+p a:hover, a:focus {
+    color:#fdf57e;
+    text-decoration: underline double;
+    background-color: #d75e70;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+/* REQUIRED: card display */
+/* original browser size was 1425px; had the 4 cards displayed in a row. shrunk to 1295px; had 3 cards displayed in a row and 1 large card underneath. at 975px, it created a 2x2 grid with the cards. at 655px, it created a one-column grid.*/
+
+#projects-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+#project-1 {
+    flex: 1;
+    flex-basis: 300px;
+    background-color:aliceblue;
+    border-radius: 25px;
+}
+
+#project-2 {
+    flex: 1;
+    flex-basis: 300px;
+    background-color:aliceblue;
+    border-radius: 25px;
+}
+
+#project-3 {
+    flex: 1;
+    flex-basis: 300px;
+    background-color:aliceblue;
+    border-radius: 25px;
+}
+
+#project-4 {
+    flex: 1;
+    flex-basis: 300px;
+    background-color:aliceblue;
+    border-radius: 25px;
+}
+
+/* REQUIRED: image styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* REQUIRED: centering an element two ways, seen in the ul tag */
+#design-skills {
+    background-color: aliceblue;
+    border-radius: 25px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul {
+    display: flex;
+    gap: 75px;
+    list-style: none;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
