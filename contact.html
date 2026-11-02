@@ -18,10 +18,11 @@
         </nav>
     </header>
 
-    <!-- contact form -->
     <main>
-        <section id="contact">
+        <!-- contact form -->
+         <section id="contact">
             <h2>Contact</h2>
+            <!-- the method selected for the contact form is POST, as the data collected from the form is not intended to be visible in the URL and may contain sensitive information. It will be sent to the server to be processed. -->
             <form action="" method="post">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" required>
@@ -40,10 +41,18 @@
                 <label for="message">Message</label>
                 <textarea id="message" rows="4" name="message" required></textarea>
 
+                <fieldset>
+                    <legend>Preferred Contact Method</legend>
+                    <input type="radio" id="by-email" name="contact" value="email">
+                    <label for="by-email">Email</label>
+                    <input type="radio" id="by-phone" name="contact" value="phone">
+                    <label for="by-phone">Phone</label>
+                </fieldset>
+
                 <button type="submit">Send</button>
             </form>
         </section>
 
-        
+
 
     </main>
